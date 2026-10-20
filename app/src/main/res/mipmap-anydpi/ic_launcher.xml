@@ -1,6 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/ic_launcher_background" />
-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
-    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
-</adaptive-icon>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#0D47A1" android:pathData="M10,22a12,12 0,0 1,12 -12h64a12,12 0,0 1,12 12v64a12,12 0,0 1,-12 12h-64a12,12 0,0 1,-12 -12z" />
+    <!-- лист статьи с загнутым уголком -->
+    <path android:fillColor="#FFFFFF" android:pathData="M34,28H64L74,38V80H34Z" />
+    <path android:fillColor="#90CAF9" android:pathData="M64,28V38H74Z" />
+    <!-- «планета» -->
+    <path android:fillColor="#FF7043" android:pathData="M39,39a5,5 0,1 0,10 0a5,5 0,1 0,-10 0Z" />
+    <!-- строки текста -->
+    <path android:fillColor="#1565C0" android:pathData="M40,48h28v3h-28z" />
+    <path android:fillColor="#1565C0" android:pathData="M40,56h28v3h-28z" />
+    <path android:fillColor="#1565C0" android:pathData="M40,64h20v3h-20z" />
+    <path android:fillColor="#1565C0" android:pathData="M40,72h24v3h-24z" />
+</vector>

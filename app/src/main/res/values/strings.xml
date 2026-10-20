@@ -1,4 +1,61 @@
 <resources>
-    <string name="app_name">DroidPractice1</string>
+    <string name="app_name">Космос.Лонгрид</string>
     <string name="article_title">Статья</string>
+
+    <!-- Общие -->
+    <string name="share">Поделиться</string>
+    <string name="share_chooser_title">Поделиться статьёй</string>
+    <string name="back">Назад</string>
+    <string name="reactions_question">Понравилась статья?</string>
+    <string name="like">Нравится</string>
+    <string name="dislike">Не нравится</string>
+    <string name="next_article_label">Читайте также</string>
+    <string name="next_article_unread">Новая статья · 4 мин чтения</string>
+    <string name="next_article_read">Прочитано</string>
+    <string name="go_to_next_article">Читать следующую статью</string>
+    <string name="reread_next_article">Перечитать статью о марсоходе</string>
+    <string name="mark_as_read">Прочитано</string>
+    <string name="mark_as_read_hint">Отметьте, когда дочитаете статью, — главная страница это запомнит</string>
+
+    <!-- Статья 1: «Джеймс Уэбб» (Compose) -->
+    <string name="first_category">НАУКА · КОСМОС</string>
+    <string name="first_title">«Джеймс Уэбб»: золотое зеркало, которое смотрит в начало времён</string>
+    <string name="first_meta">Л. Слесаренко · 20 октября · 5 мин</string>
+    <string name="first_image_url">https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000350/GSFC_20171208_Archive_e000350~medium.jpg</string>
+    <string name="first_image_caption">Главное зеркало телескопа в чистой комнате центра Годдарда. Фото: NASA</string>
+    <string name="first_lead">Самый большой космический телескоп в истории работает уже несколько лет и успел изменить наши представления о ранней Вселенной. Разбираемся, как он устроен и почему его зеркало покрыто золотом.</string>
+    <string name="first_heading_1">Почему инфракрасный</string>
+    <string name="first_paragraph_1">Свет первых галактик летел к нам больше 13 миллиардов лет. За это время Вселенная расширилась, и волны «растянулись» из видимого диапазона в инфракрасный. Поэтому «Уэбб» строили не как преемника «Хаббла», а как прибор, который видит тепло.</string>
+    <string name="first_paragraph_2">Чтобы собственное тепло не мешало наблюдениям, телескоп нужно сильно охладить. Его прикрывает пятислойный солнцезащитный экран размером с теннисный корт, а работает он в точке Лагранжа L2 — в полутора миллионах километров от Земли.</string>
+    <string name="first_quote">«Мы увидели галактики, которые, по нашим моделям, вообще не должны были успеть так вырасти».</string>
+    <string name="first_quote_author">— из комментариев астрономов после первых снимков</string>
+    <string name="first_heading_2">Золото и бериллий</string>
+    <string name="first_paragraph_3">Главное зеркало диаметром 6,5 метра собрано из 18 шестиугольных сегментов из бериллия: этот металл лёгкий и почти не деформируется на холоде. Сверху нанесён тончайший слой золота — оно лучше всего отражает инфракрасный свет.</string>
+    <string name="first_facts_title">В цифрах</string>
+    <string name="first_fact_1">6,5 м — диаметр главного зеркала</string>
+    <string name="first_fact_2">18 сегментов — из бериллия с золотым покрытием</string>
+    <string name="first_fact_3">1,5 млн км — расстояние до точки L2</string>
+    <string name="first_fact_4">25.12.2021 — дата запуска на ракете «Ариан-5»</string>
+    <string name="first_paragraph_4">Телескоп — совместный проект NASA, Европейского и Канадского космических агентств. Первые научные снимки опубликовали летом 2022 года, и с тех пор почти каждую неделю выходят работы, основанные на его данных.</string>
+
+    <!-- Статья 2: Perseverance (Views / XML) -->
+    <string name="second_category">НАУКА · МАРС</string>
+    <string name="second_title">Perseverance: пять лет в кратере Езеро</string>
+    <string name="second_subtitle">Как марсоход ищет следы древней жизни и готовит образцы для отправки на Землю</string>
+    <string name="second_image_url">https://images-assets.nasa.gov/image/PIA24343/PIA24343~medium.jpg</string>
+    <string name="second_image_caption">Иллюстрация миссии Mars 2020. Изображение: NASA/JPL-Caltech</string>
+    <string name="second_lead">18 февраля 2021 года марсоход Perseverance совершил посадку в кратере Езеро. Место выбрали не случайно: миллиарды лет назад здесь было озеро, а значит, могли сохраниться следы микроорганизмов.</string>
+    <string name="second_heading_1">Озеро без воды</string>
+    <string name="second_paragraph_1">Кратер шириной около 45 километров когда-то заполняла вода, а в него впадала река. Её дельта видна с орбиты до сих пор. Осадочные породы дельты — лучшее место на Марсе, чтобы искать <b>биосигнатуры</b>: химические и минеральные следы жизни.</string>
+    <string name="second_quote">«Каждая пробирка — это кусочек истории планеты, который однажды попадёт в земную лабораторию».</string>
+    <string name="second_heading_2">Вертолёт, кислород и пробирки</string>
+    <string name="second_paragraph_2">Вместе с марсоходом прилетел вертолёт <i>Ingenuity</i>. 19 апреля 2021 года он выполнил первый в истории управляемый полёт над другой планетой, а всего совершил <b>72 полёта</b>. Эксперимент <i>MOXIE</i> показал, что из марсианского углекислого газа можно получать кислород.</string>
+    <string name="second_paragraph_3">Главная задача миссии — собрать образцы пород в герметичные пробирки. В 2024 году марсоход нашёл камень Cheyava Falls с необычными «леопардовыми пятнами». Такие узоры на Земле часто связаны с жизнью микробов, но окончательный ответ дадут только анализы на Земле.</string>
+    <string name="second_stat_1_value">72</string>
+    <string name="second_stat_1_label">полёта\nIngenuity</string>
+    <string name="second_stat_2_value">45 км</string>
+    <string name="second_stat_2_label">ширина\nкратера</string>
+    <string name="second_stat_3_value">1 т</string>
+    <string name="second_stat_3_label">масса\nмарсохода</string>
+    <string name="second_signature">Подготовлено по открытым материалам NASA</string>
 </resources>

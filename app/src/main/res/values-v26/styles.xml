@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Выравнивание по ширине доступно с Android 8.0 -->
+    <style name="ArticleParagraph" parent="BaseArticleParagraph">
+        <item name="android:justificationMode">inter_word</item>
+    </style>
+</resources>
