@@ -30,36 +30,17 @@
 
             <!-- Рубрика прижата вправо -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:letterSpacing="0.2"
-                android:text="@string/second_category"
-                android:textColor="@color/mars"
-                android:textSize="12sp"
-                android:textStyle="bold" />
+                style="@style/ArticleCategory"
+                android:text="@string/second_category" />
 
             <!-- Заголовок по центру, засечками -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/second_title"
-                android:textColor="@color/text_primary"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                style="@style/ArticleTitle"
+                android:text="@string/second_title" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:gravity="center"
-                android:text="@string/second_subtitle"
-                android:textColor="@color/text_secondary"
-                android:textSize="16sp"
-                android:textStyle="italic" />
+                style="@style/ArticleSubtitle"
+                android:text="@string/second_subtitle" />
 
             <ImageView
                 android:id="@+id/article_image"
@@ -71,25 +52,13 @@
                 tools:src="@drawable/image_placeholder" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:gravity="start"
-                android:text="@string/second_image_caption"
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp"
-                android:textStyle="italic" />
+                style="@style/ArticleImageCaption"
+                android:text="@string/second_image_caption" />
 
             <!-- Лид: полужирный шрифт и увеличенный межстрочный интервал -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-medium"
-                android:lineSpacingMultiplier="1.2"
-                android:text="@string/second_lead"
-                android:textColor="@color/text_primary"
-                android:textSize="18sp" />
+                style="@style/ArticleLead"
+                android:text="@string/second_lead" />
 
             <TextView
                 style="@style/ArticleHeading"
@@ -113,14 +82,8 @@
                     android:background="@color/mars" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:padding="12dp"
-                    android:text="@string/second_quote"
-                    android:textColor="@color/mars"
-                    android:textSize="18sp"
-                    android:textStyle="italic" />
+                    style="@style/ArticleQuote"
+                    android:text="@string/second_quote" />
             </LinearLayout>
 
             <TextView
@@ -177,14 +140,8 @@
                 android:text="@string/second_paragraph_3" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:fontFamily="monospace"
-                android:gravity="end"
-                android:text="@string/second_signature"
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp" />
+                style="@style/ArticleSignature"
+                android:text="@string/second_signature" />
 
             <!-- Переключатель «Прочитано» -->
             <LinearLayout
@@ -203,19 +160,12 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mark_as_read"
-                        android:textColor="@color/text_primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        style="@style/ReadPanelTitle"
+                        android:text="@string/mark_as_read" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mark_as_read_hint"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="13sp" />
+                        style="@style/ReadPanelHint"
+                        android:text="@string/mark_as_read_hint" />
                 </LinearLayout>
 
                 <Switch

@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ArticleHeading">
+    <!-- Текстовые стили статьи наследуются от готовых Material-стилей,
+         а переопределяют только то, что отличает статью от обычного текста. -->
+
+    <style name="ArticleCategory" parent="android:TextAppearance.Material.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textColor">@color/mars</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArticleTitle" parent="android:TextAppearance.Material.Headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArticleSubtitle" parent="android:TextAppearance.Material.Subhead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ArticleImageCaption" parent="android:TextAppearance.Material.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ArticleLead" parent="android:TextAppearance.Material.Subhead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ArticleHeading" parent="android:TextAppearance.Material.Title">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">20dp</item>
@@ -9,7 +59,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="BaseArticleParagraph">
+    <style name="BaseArticleParagraph" parent="android:TextAppearance.Material.Body1">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">8dp</item>
@@ -20,6 +70,25 @@
 
     <style name="ArticleParagraph" parent="BaseArticleParagraph" />
 
+    <style name="ArticleQuote" parent="android:TextAppearance.Material.Body1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/mars</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ArticleSignature" parent="android:TextAppearance.Material.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
     <style name="ArticleStat">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -28,7 +97,7 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="ArticleStatValue">
+    <style name="ArticleStatValue" parent="android:TextAppearance.Material.Headline">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
@@ -37,11 +106,24 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ArticleStatLabel">
+    <style name="ArticleStatLabel" parent="android:TextAppearance.Material.Caption">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/text_secondary</item>
-        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ReadPanelTitle" parent="android:TextAppearance.Material.Subhead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ReadPanelHint" parent="android:TextAppearance.Material.Body1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">13sp</item>
     </style>
 </resources>

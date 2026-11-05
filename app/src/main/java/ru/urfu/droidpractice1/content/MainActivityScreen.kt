@@ -70,6 +70,7 @@ import coil.compose.AsyncImage
 import ru.urfu.droidpractice1.R
 import ru.urfu.droidpractice1.SecondActivity
 import ru.urfu.droidpractice1.ui.theme.DroidPractice1Theme
+import ru.urfu.droidpractice1.ui.theme.Spacing
 
 private val ReadColor = Color(0xFF2E7D32)
 private val PlaceholderPainter = ColorPainter(Color(0xFFE0E0E0))
@@ -115,12 +116,12 @@ fun MainActivityScreen() {
                 modifier = Modifier
                     .padding(innerPadding)
                     .verticalScroll(rememberScrollState())
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp),
+                    .padding(horizontal = Spacing.large, vertical = Spacing.small),
+                verticalArrangement = Arrangement.spacedBy(Spacing.medium),
             ) {
                 ArticleBody()
 
-                HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                HorizontalDivider(modifier = Modifier.padding(vertical = Spacing.small))
 
                 Reactions(
                     likes = likes,
@@ -143,7 +144,7 @@ fun MainActivityScreen() {
                         ),
                     )
                 }
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(Spacing.large))
             }
         }
     }
@@ -230,7 +231,7 @@ private fun SectionHeading(text: String) {
         text = text,
         style = MaterialTheme.typography.titleLarge,
         fontWeight = FontWeight.Bold,
-        modifier = Modifier.padding(top = 8.dp),
+        modifier = Modifier.padding(top = Spacing.small),
     )
 }
 
@@ -249,7 +250,7 @@ private fun Quote(text: String, author: String) {
         modifier = Modifier
             .fillMaxWidth()
             .height(IntrinsicSize.Min)
-            .padding(vertical = 4.dp),
+            .padding(vertical = Spacing.tiny),
     ) {
         Box(
             modifier = Modifier
@@ -257,7 +258,7 @@ private fun Quote(text: String, author: String) {
                 .fillMaxHeight()
                 .background(MaterialTheme.colorScheme.primary, RoundedCornerShape(2.dp)),
         )
-        Column(modifier = Modifier.padding(start = 12.dp)) {
+        Column(modifier = Modifier.padding(start = Spacing.medium)) {
             Text(
                 text = text,
                 fontFamily = FontFamily.Serif,
@@ -269,7 +270,7 @@ private fun Quote(text: String, author: String) {
                 text = author,
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(top = 4.dp),
+                modifier = Modifier.padding(top = Spacing.tiny),
             )
         }
     }
@@ -281,7 +282,7 @@ private fun FactsCard() {
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
         modifier = Modifier.fillMaxWidth(),
     ) {
-        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Column(modifier = Modifier.padding(Spacing.large), verticalArrangement = Arrangement.spacedBy(Spacing.small)) {
             Text(
                 text = stringResource(R.string.first_facts_title).uppercase(),
                 style = MaterialTheme.typography.labelLarge,
@@ -310,8 +311,8 @@ private fun Reactions(likes: Int, dislikes: Int, onLike: () -> Unit, onDislike: 
             style = MaterialTheme.typography.titleMedium,
         )
         Row(
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-            modifier = Modifier.padding(top = 8.dp),
+            horizontalArrangement = Arrangement.spacedBy(Spacing.large),
+            modifier = Modifier.padding(top = Spacing.small),
         ) {
             ReactionButton(R.drawable.ic_thumb_up, R.string.like, likes, Color(0xFF2E7D32), onLike)
             ReactionButton(R.drawable.ic_thumb_down, R.string.dislike, dislikes, Color(0xFFC62828), onDislike)
@@ -328,7 +329,7 @@ private fun ReactionButton(@DrawableRes icon: Int, description: Int, count: Int,
             tint = tint,
             modifier = Modifier.size(20.dp),
         )
-        Spacer(modifier = Modifier.width(8.dp))
+        Spacer(modifier = Modifier.width(Spacing.small))
         Text(text = count.toString(), style = MaterialTheme.typography.titleMedium)
     }
 }
@@ -351,7 +352,7 @@ private fun NextArticleCard(isRead: Boolean, onClick: () -> Unit) {
             },
         ),
     ) {
-        Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(modifier = Modifier.padding(Spacing.medium), verticalAlignment = Alignment.CenterVertically) {
             AsyncImage(
                 model = stringResource(R.string.second_image_url),
                 contentDescription = null,
@@ -363,13 +364,13 @@ private fun NextArticleCard(isRead: Boolean, onClick: () -> Unit) {
                     .size(88.dp)
                     .clip(RoundedCornerShape(12.dp)),
             )
-            Column(modifier = Modifier.padding(start = 12.dp)) {
+            Column(modifier = Modifier.padding(start = Spacing.medium)) {
                 Text(
                     text = stringResource(R.string.second_title),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                 )
-                Spacer(modifier = Modifier.height(6.dp))
+                Spacer(modifier = Modifier.height(Spacing.small))
                 if (isRead) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Icon(
@@ -382,7 +383,7 @@ private fun NextArticleCard(isRead: Boolean, onClick: () -> Unit) {
                             text = stringResource(R.string.next_article_read),
                             color = ReadColor,
                             style = MaterialTheme.typography.labelLarge,
-                            modifier = Modifier.padding(start = 4.dp),
+                            modifier = Modifier.padding(start = Spacing.tiny),
                         )
                     }
                 } else {
